@@ -29,4 +29,99 @@ git is distributed version control system
     <img src="https://user-images.githubusercontent.com/85268263/149650761-23291a18-01a1-48bc-8a81-641a4f25cbd0.png" alt="img-metadata-commit"/>
   </li>
 </ol>
+<h2>Git Areas</h2>
+<div>
+  Git have a 3 area:
+  <ol>
+    <li>
+      <div><strong>Working Area</strong></div>
+      <div>This file in local area or only in your device (untracked file), in there u can modify your content</div>
+    </li>
+    <li>
+      <div><strong>Stagging Area</strong></div>
+      <div>This area used for thats file are going to be part of the next commit. this area know change between current commit and next commit</div>
+    </li>
+    <li>
+      <div><strong>Repository</strong></div>
+      <div>This area contains all commits and contains all files you have committed in git</div>
+    </li>
+  </ol>
+</div>
+<h2>Stashing</h2>
+<div>
+  One more place to store ur code in git without u commit your code. 
+  It's useful if you want to switch branches without committing first when you have written code
+</div>
+<div>Commands in git stash:</div>
 
+1. Command for stashing your code
+
+```sh
+git stash
+```
+
+2. Command for how to show your list stash
+
+```sh
+git stash list
+```
+
+3. Command for how to show your list stash
+
+```sh
+git stash list
+```
+
+4. Command for show your content in your list stash
+
+```sh
+git stash show stash@{n}
+```
+
+5. Command for apply ur last stash
+
+```sh
+git stash apply
+```
+
+6. Command for apply ur specific stash
+
+```sh
+git stash apply stash@{n}
+```
+
+7. Command for stashing untracked files
+
+```sh
+git stash --include-untracked
+```
+
+8. Command for stashing all files
+
+```sh
+git stash --all
+```
+
+9. Command for delete last stashing and applying change
+
+```sh
+git stash pop
+```
+
+10. Command for delete last stash
+
+```sh
+git stash drop
+```
+
+11. Command for delete specific stash
+
+```sh
+git stash drop stash@{n}
+```
+
+12. Command for delete all stash
+
+```sh
+git stash clear
+```
