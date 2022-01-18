@@ -227,4 +227,5 @@ Pull Request like a request permision to maintener git for like a i have a new f
 
 * Github branch commands: https://git-scm.com/docs/git-branch
 * Github tag commands: https://git-scm.com/docs/git-tag
-* Github tag commands: https://git-scm.com/docs/git-clean
+* Github clean commands: https://git-scm.com/docs/git-clean
+* Github rebash commands: https://git-scm.com/docs/git-rebash
