@@ -125,3 +125,84 @@ git stash drop stash@{n}
 ```sh
 git stash clear
 ```
+
+<h2>Branch</h2>
+<div>
+  Branch is a just pointer to a particular commit. and where u make a new commit.
+</div>
+
+It is best to try to name your branches as specific as possible, so not to confuse them with any others. There are many naming conventions out there for branches, but for this week simply try to name them off of a feature. To see all your branches:
+
+```
+git branch
+```
+
+As you can see, you have created your branch, but are not currently on it. To navigate onto it please:
+
+```
+git checkout new-branch
+git branch
+```
+
+Now you can see you are on that branch. Go back to master and now we are going to delete `new-branch`.
+
+```
+git checkout master
+git branch -d new-branch
+git branch
+```
+
+As you can see, your branch is now gone.
+<div>
+  U can see all command with branch in <a href="https://git-scm.com/docs/git-branch">here.</a>
+</div>
+
+<h2>Tags</h2>
+<div>Tags point to a commit but store additional information such as author, message and date. Thus tags are more useful to "tag" a specific version and the tag will then always stay on that version and usually not be changed</div>
+
+```
+% git checkout master    
+Switched to branch 'master'
+
+% git tag my-first-commit
+
+% tree .git/refs        
+.git/refs
+├── heads
+│   ├── master
+│   └── new_branch
+└── tags
+    └── my-first-commit
+
+2 directories, 3 files
+```
+
+<div>
+  U can see all command with tag in <a href="https://git-scm.com/docs/tag">here.</a>
+</div>
+
+<h2>Merging and Fast Forward</h2>
+<div>Merge many parent into one commit and became one</div>
+<div><img src="https://user-images.githubusercontent.com/85268263/149847499-215bfec5-274f-4de5-a11e-ca9da571013d.png" /><div>
+<div><img src="https://user-images.githubusercontent.com/85268263/149847553-57b7dfd5-3dd5-4c3d-ae0f-7a3a87e394db.png" /><div>
+  
+<h2>Useful Commit message</h2>
+Try to make the message at commit as clear as possible, because if there is a bug we can easily track it down, for release note, good for reviewer code, rolling back, and associate with ticket/task
+<h3>Example bad commit message</h3>
+<img src="https://user-images.githubusercontent.com/85268263/149848310-e076616b-154a-41db-840d-e001a1a7cdb1.png" />
+  
+<h2>Git Checkout</h2>
+Git checkout restore working tree files or switch branches. It changes HEAD to point to new branch, copy the commit snapshot to the staging area, and update the working area with the new branch contents. Basically replace/overwrite the working area with the version from the current staging area.
+<div><img src="https://user-images.githubusercontent.com/85268263/149849232-670b782a-c72b-488f-bffb-cc82f2fcb4f5.png" /></div>
+  
+<h2>Git Clean</h2>
+Git clean will clear your working area by deleting untracked files and cannot be undone. 
+
+
+
+
+<a name="resources" id="resources"></a>
+# RESOURCES
+
+* Github branch commands: https://git-scm.com/docs/git-branch
+* Github tag commands: https://git-scm.com/docs/git-tag
