@@ -196,8 +196,29 @@ Git checkout restore working tree files or switch branches. It changes HEAD to p
 <div><img src="https://user-images.githubusercontent.com/85268263/149849232-670b782a-c72b-488f-bffb-cc82f2fcb4f5.png" /></div>
   
 <h2>Git Clean</h2>
-Git clean will clear your working area by deleting untracked files and cannot be undone. 
+Git clean will clear your working area by deleting untracked files and cannot be undone.
+U can see the command clean in <a href="https://git-scm.com/docs/git-clean">here</a>
+  
+<h2>Rebase</h2>
+The point at which I branched to move to a new starting point. use rebase when between ur branch feature and ur branch master have diverged and you want a messy merged commit in our history. Rebase give a new commit history
+<img src="https://user-images.githubusercontent.com/85268263/149866436-f5e9782d-b646-4e00-a978-953b05a94e83.png" />
+U can see the command clean in <a href="https://git-scm.com/docs/git-rebase">here</a>
 
+<h2>Git vs Github</h2>
+Git open source version control software. While GitHub is the key for collaborating with other developer, GitHub is a tool built on top of git with easy to use interface.
+<h3>Remote</h3>
+Remote u can use command
+
+  ```sh
+  git clone <url_branch>
+  ```
+<img src="https://user-images.githubusercontent.com/85268263/149867979-9003d55e-7d74-4f48-abc7-551e1788a60d.png" />
+
+<h3>Fork</h3>
+Fork is a copy of a another git repo in your repo
+<h3>Pull Request (PR)</h3>
+Pull Request like a request permision to maintener git for like a i have a new feature or i fixing bug
+<img src="https://user-images.githubusercontent.com/85268263/149871326-d6712706-d0f6-4daa-8364-273fc7d60f42.png" />
 
 
 
@@ -206,3 +227,4 @@ Git clean will clear your working area by deleting untracked files and cannot be
 
 * Github branch commands: https://git-scm.com/docs/git-branch
 * Github tag commands: https://git-scm.com/docs/git-tag
+* Github tag commands: https://git-scm.com/docs/git-clean
